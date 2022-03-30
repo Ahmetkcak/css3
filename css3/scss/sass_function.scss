@@ -1,0 +1,25 @@
+$bg-color:darken(#0ac, 20);
+
+@function ikiyekatla($deger){
+    @return $deger*2;
+}
+
+
+@function arkaplanrenginiayarla($arkaplanrengi){
+    @if(lightness($arkaplanrengi) >70){
+        @return #333;
+    }
+
+    @else{
+        @return white;
+    }
+}
+
+
+.div{
+    color: arkaplanrenginiayarla($bg-color);
+    height: 300px;
+    width: ikiyekatla(300px);
+    background-color: $bg-color;
+    font-size: ikiyekatla(2rem);
+}

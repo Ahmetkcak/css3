@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transfom Property</title>
+    <style>
+        div{
+            margin: 200px;
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            font-size: 2rem;
+            transform-origin: 0 0;  /*orijin nokta normale orta noktasıdır ama biz orta noktasını burada değiştirdik*/
+        }
+
+        div:hover{
+            /* transform: translate(50px,100px);
+            transform: translate(100%); */
+            /* transform: rotate(180deg); 180 derece dön */
+            /* transform: rotateX(1turn); x ekseninde 1 tur dön */
+            /* transform: scale(2); Eksenleri kullanmazsam x ve y de kendini büyütür. */
+            /* transform: skewX(10deg) translate(3); */
+            transform: rotate(2turn);
+            transition: 2s;
+
+            /*matrix(scaleX(),skewY(),skewX(),translateX(),translateY())*/
+
+
+        }
+    </style>
+</head>
+<body>
+    <div>Div</div>
+</body>
+</html>

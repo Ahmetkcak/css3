@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Türleri ve Z-index  | static relative absolute sticky</title>
+    <style>
+        body{
+            font-size: 32px;
+            height: 200vh;
+            margin: 1rem;
+            border: 2px solid red;
+        }
+
+        .parent{
+            border: 2px solid blue;
+            padding: 2rem;
+            background-color: chocolate;
+        }
+
+        .item1{
+            padding: 2rem;
+            position: relative; /* margin de uzaklığı değiştirir ama diğleri de olaya dahil olur ama bu durumda diğerleri daahil olmaz ve olduğu yere göre değişim olur */
+            background-color: darkmagenta;
+            z-index: 2;
+        }
+
+        .item2{
+            padding: 2rem;
+            background-color: teal;
+            position: sticky;
+            top: 0px;
+            z-index: 3;  /* üste olanı ayarlamak için büyük sayıyı ver aksın gitsin */
+        }
+
+        .item3{
+            padding: 2rem;
+            background-color: gold;
+            position: fixed;  /*FİXED in abslute den farkı diğeri sadece BÜTÜN SAYFA boyunca yayılıyor ABSOLUTE ise sadece ARKAPLAN boyunca yayılıyor. İkisinde de kaydıkça kayıyor.*/
+            bottom: 10px;
+            right: 0px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="parent">
+        Ana Taşıyıcı
+        <div class="item1">Item 1</div>
+        <div class="item2">Item 2</div>
+        <div class="item3">Item 3</div>
+        <div class="item1">Item 1</div>
+        <div class="item1">Item 1</div>
+        <div class="item1">Item 1</div>
+        <div class="item1">Item 1</div>
+
+    </div>
+</body>
+</html>

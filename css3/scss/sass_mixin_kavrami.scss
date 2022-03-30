@@ -1,0 +1,20 @@
+@mixin menu-buton($bg:red,$renk:black){ //Renk gönderilmezse default olarak iki nokta sonrası alternatif olarak veriliyor.
+    a{
+        background-color: $bg;
+        color: white;
+        margin: 5px;
+        &:hover{
+            color: $renk;
+        }
+    }
+}
+
+
+
+ul{
+    list-style: none;
+}
+
+.navbar{
+    @include menu-buton(orange,black);
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border Margin Paddding</title>
+    <style>
+        #p1{
+            border-style: dotted;
+            border-style: solid;
+            border-color: coral;
+            border-width: 4px;
+            padding: 20px;
+            border: 2px green solid;  /*En son verilen değerler burada olduğundan sayfada bu değerler geçerli olacaktır.*/
+            margin: 10px 20px 30px 40px; /*Yukarı sağ aşağı sol (Boşluk)*/
+        }
+
+        #p2{
+            margin-top: 60px;    /*Yukarıdan istediğimiz kadar piksel boşluk bıraktık*/
+            margin-bottom: 20px; /*Aşağıdan istediğimiz kadar piksel boşluk bıraktık ve aynı şekilde sağdan ve soldan da boşluk bırakabilirz*/
+            border: 4px red solid;
+            padding: 10px;       /*Alanın içindeki yazının kenara olan boşluğunu ayarlamak için kullanılır*/
+            border-width: 10px 30px;
+        }
+
+        #p3{
+            border-top: 5px blue solid;
+            border-bottom: 15px  teal solid;
+            border-left: 3px solid;
+            border-right: 5px solid;
+            border-color: black green blue brown;
+            border-style: dashed dotted;
+            padding: 15px;
+        }
+
+        #p4{
+            border: 4px red solid;
+            border-radius: 10px;
+            border-top-left-radius: 20px; /*Borderin sağını solunu bu şekilde farklı eğimle gösterebilirz*/
+            padding: 15px;
+        }
+
+        #orta{
+            width: 300px;
+            background-color: purple;
+            height: 300px;
+            margin: auto;
+            box-sizing: border-box;
+            padding: 40px;  /*Yazının arka planın kenarlarına olan uzaklığını eşit miktarda ayarlıyor.*/
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Tüm kenarlara sınır uygula -->
+    <p id="p1">Bu paragraf 1</p>
+    <p id="p2">Bu paragraf 2</p>
+    <p id="p3">Bu paragraf 3</p>
+    <p id="p4">Bu paragraf 4</p>
+    <div id="orta">Ortalanacak yapı kısa olduğundan göremedik</div>
+</body>
+</html>
+
+
+
+<!-- Border yazının etrafına veya herhangi bir şeye kenar çubuğu ayarlamak için kullanılır -->
+<!-- Margin ayarladığımız şeyin (yazının,alanın vb.) sayfanın ayarlanan şeye olan uzaklığını ayarlamak için kullanılır  -->
+<!-- Padding yazının arka plana olan uzaklığını ayarlamak için kullanılır -->

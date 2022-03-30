@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToolTip</title>
+    <style>
+        * , *::after , *::before{
+            box-sizing: border-box;
+        }
+
+        body{
+            font-size: 2rem;
+            margin-top: 300px;
+        }
+
+        [data-tooltip]::after ,[data-tooltip]::before{
+            position: absolute;
+            left: 50%;
+        }
+
+        [data-tooltip]{
+            background-color: royalblue;
+            position: relative;
+            display: inline-block;
+            --tooltip-color: #333;
+            --tooltip-ok-size:1rem
+        }
+
+        [data-tooltip]:hover::before{
+            content: attr(data-tooltip);
+
+            transform: translate(-50% , calc(-100% - var(--tooltip-ok-size)));
+            background-color: var(--tooltip-color);
+            border-radius: .3rem;
+            color: white;
+            padding: .5rem;
+            width: max-content;
+            max-width: 100%;
+            text-align: center;
+        }
+
+        [data-tooltip]:hover::after{
+            content: '';
+            border: calc(var(--tooltip-ok-size) / 2) solid transparent;
+            top: 0px;
+            border-top-color: var(--tooltip-color);
+            width: var(--tooltip-ok-size);
+            height: var(--tooltip-ok-size);
+            transform: translate(-50%, -100% );
+           
+        }
+    </style>
+</head>
+<body>
+    
+
+    <span class="tooltip" data-tooltip="Bu deneme tooltip yazısı">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero praesentium, vitae, ullam sint, blanditiis esse temporibus architecto eum iusto natus quod recusandae quaerat odio exercitationem? Perspiciatis tenetur nesciunt recusandae adipisci!</span>
+
+
+
+</body>
+</html>

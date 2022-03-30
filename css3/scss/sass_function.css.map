@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAkBA,AAAA,IAAI,CAAA;EACA,KAAK,EANO,KAAK;EAOjB,MAAM,EAAE,KAAK;EACb,KAAK,EAlBG,KAAQ;EAmBhB,gBAAgB,EAtBV,OAAgB;EAuBtB,SAAS,EApBD,IAAQ;CAqBnB",
+    "sources": [
+        "sass_function.scss"
+    ],
+    "names": [],
+    "file": "sass_function.css"
+}

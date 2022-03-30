@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            color: white;
+            background-color: orange;
+            font-size: 2rem;
+            /* animation:renk-degistir 2s cubic-bezier(0.57,-0.23, 0.4, 1.35) 1s 2 alternate,boyut-degistir 4s 1s 2 alternate;  */
+            animation-name: renk-degistir,boyut-degistir; /*Animasyon adı*/
+            animation-duration: 2s;  /*Animasyon süresi*/
+            animation-timing-function: ease-in; /*Animasyon şekli-geçisi*/
+            animation-delay: .1s; /*İlk gelindiğinde bekleme süresi*/
+            animation-iteration-count: 2; /*Animasyon tekrar sayısı*/
+            animation-fill-mode: both;
+            animation-direction: alternate;  /*Animasyonda tekrar geri gitmeyi sağlıyor*/
+        }
+
+        div:hover{
+             animation-play-state: paused;
+        }
+
+        @keyframes renk-degistir{
+            from{
+                background-color: orange;
+            }
+            to{
+                background-color: teal;
+            }
+        }
+
+        @keyframes boyut-degistir {
+            to{
+                width: 200px;
+                height: 200px;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    <div>Div</div>
+</body>
+</html>

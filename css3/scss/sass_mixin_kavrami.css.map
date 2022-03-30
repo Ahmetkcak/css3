@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAaA,AAAA,EAAE,CAAA;EACE,UAAU,EAAE,IAAI;CACnB;;AAED,AAhBI,OAgBG,CAhBH,CAAC,CAAA;EACG,gBAAgB,EAgBA,MAAM;EAftB,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,GAAG;CAId;;AASL,AAZQ,OAYD,CAhBH,CAAC,AAII,MAAM,CAAA;EACH,KAAK,EAYc,KAAK;CAX3B",
+    "sources": [
+        "sass_mixin_kavrami.scss"
+    ],
+    "names": [],
+    "file": "sass_mixin_kavrami.css"
+}

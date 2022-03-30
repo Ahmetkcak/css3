@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseue Element ve sınıflar</title>
+    <style>
+        p::first-letter{
+            font-size: 3rem;
+        }
+
+        p::first-line{
+            background-color: red;
+        }
+
+        p::selection{
+            background-color: blue;
+            color: brown;
+        }
+
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+
+        .box::before{
+            display: block  ;
+            width: 10px;
+            height: 10px;
+            background-color: yellow;
+            content: ' ';
+        }
+
+
+        .box::after{
+            display: block  ;
+            width: 10px;
+            height: 10px;
+            background-color: blue;
+            content: ' ';
+        }
+    </style>
+</head>
+<body>
+    <!-- elementler :: ile sınıflar : belirtilir. -->
+
+    <div class="box"> koçak </div>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni quo optio quia. Deleniti libero dolorum doloremque omnis veniam quas delectus voluptatibus, ipsam mollitia blanditiis, vel reprehenderit rerum id consequatur magni? Similique aspernatur nulla exercitationem animi aliquam optio cum nemo porro nihil, autem ut voluptatem quia culpa praesentium maiores amet vitae.</p>
+</body>
+</html>

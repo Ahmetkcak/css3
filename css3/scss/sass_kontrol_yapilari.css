@@ -1,0 +1,49 @@
+p {
+  background-color: yellow;
+  color: teal;
+}
+
+.list-1 {
+  width: 2px;
+}
+
+.list-2 {
+  width: 4px;
+}
+
+.list-3 {
+  width: 6px;
+}
+
+.list-4 {
+  width: 8px;
+}
+
+.list-5 {
+  width: 10px;
+}
+
+.normal {
+  font-weight: normal;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.italic {
+  font-weight: italic;
+}
+
+.item-1 {
+  color: #ff3333;
+}
+
+.item-2 {
+  color: #ff6666;
+}
+
+.item-3 {
+  color: #ff9999;
+}
+/*# sourceMappingURL=sass_kontrol_yapilari.css.map */

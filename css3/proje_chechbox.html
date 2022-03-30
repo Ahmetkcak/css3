@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kendi checkboxlarımız</title>
+    <style>
+        * , *::before , *::after{
+            box-sizing: border-box;
+        }
+
+        .my-chechbox{
+            position: absolute;
+            left: -999999px;
+            opacity: 0;
+        }
+
+        .my-chechbox + label{
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            font-size: 20px;
+        }
+
+        .my-chechbox + label::before{
+            content: '';
+            width: 1.5em;
+            height: 1.5em;
+            display: inline-block;
+            border-radius: .2em;
+            margin-right: .5em;
+            border: .05em solid black;
+        }
+
+
+        .my-chechbox + label:hover::before{
+            background-color: #0AF;
+        }
+
+        .my-chechbox:focus + label::before{
+            box-shadow: 0 0 20px black;
+        }
+
+
+        .my-chechbox:checked + label::before{
+            content: '\2713';
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            background-color: #069;
+        }
+
+
+        .my-chechbox:disabled + label::before{
+            background-color: #ccc;
+            border-color: #999;
+        }
+
+
+        .my-chechbox:disabled + label{
+            color: #aaa;
+            cursor: not-allowed;
+        }
+    </style>
+</head>
+<body>
+    <input type="checkbox" class="my-chechbox" name="" disabled checked id="cb1">
+    <label for="cb1">Chechbox 1</label>
+
+    <br>
+
+    <input type="checkbox" class="my-chechbox" name="" disabled id="cb2">
+    <label for="cb2">Chechbox 2</label>
+
+    <br>
+
+    <input type="checkbox" class="my-chechbox" name="" id="cb3">
+    <label for="cb3">Chechbox 3</label>
+
+    <br>
+
+    <input type="checkbox" class="my-chechbox" name="" id="cb4">
+    <label for="cb4">Chechbox 4</label>
+</body>
+</html>

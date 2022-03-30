@@ -1,0 +1,14 @@
+ul {
+  list-style: none;
+}
+
+.navbar a {
+  background-color: orange;
+  color: white;
+  margin: 5px;
+}
+
+.navbar a:hover {
+  color: black;
+}
+/*# sourceMappingURL=sass_mixin_kavrami.css.map */

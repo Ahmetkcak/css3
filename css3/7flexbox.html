@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            height: 500px;
+            background-color: #ccc;
+            border: 1px solid black;
+            display: flex;
+            flex-direction: column; /*Şekillerin nasıl dizileceğini ayarlıyor kolon şeklinde mi satır şeklinde mi gibi*/
+            justify-content: center;/*Bu ise sıralama işlemi yapıyor tam olarak sıralama değil ama şekillerin yatay konumda dizilişini ayarlamak için.*/
+            align-items: center; /*Bu şekillerin birbirine göre nasıl hizalanacağını ayarlıyor. Flex-start diyerek üst kısımları aynı hizada olacak şekilde ayarlıyor*/
+            align-content: flex-start; /*justify-contect ile aynı işi yapar ancak bu dikeyde aynı işi yapar*/
+            flex-wrap: wrap; /*Esnek nesnelerin bir satıra zorlanacağını yoksa birden çok satıra kaydırılacağını ayarlar*/
+        }
+
+        .item{
+            min-height: 100px;
+            min-width: 100px ;
+            background-color: orange;
+            border: 1px solid black;
+            margin: 10px;
+        }
+
+        .item1{
+            height: 120px;
+        }
+
+        .item2{
+            height: 150px;
+        }
+        
+        .item3{
+            height: 180px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item1">1</div>
+        <div class="item item2">2</div>
+        <div class="item item3">3</div>
+    </div>
+</body>
+</html>

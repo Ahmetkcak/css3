@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <style>
+
+        .div{
+            font-size: 200%;
+            color: purple;
+            font-weight: bold;
+        }
+
+
+        .container div{
+            display: none;
+            font-size: 200%;
+            font-weight: bold;
+        }
+
+        @media (orientation:landscape){
+            .container div{
+                background-color: orange;
+            }
+        }
+
+        @media (max-width: 480px){
+                div.mobil{
+                    display: block;
+                }
+            }
+        
+        @media (min-width: 481px) and (max-width:768px){
+                div.tablet{
+                    display: block;
+                }
+            }
+
+        @media (min-width: 769px) and (max-width:1024px){
+                div.laptop{
+                    display: block;
+                }
+            }
+
+
+        @media (min-width: 1025px) and (max-width:1200px){
+                div.desktop{
+                    display: block;
+                }
+            }
+
+        @media (min-width: 1201px){
+                div.large{
+                    display: block;
+                }
+            }
+
+        
+        /* @media print{
+            .div{
+                color:orange;
+            }
+        }
+
+         @media all and (max-width:768px){
+            .div{
+                color:teal;
+            }
+         }
+
+         @media (max-width:1024px){
+             .div{
+                 color:red;
+             }
+         } */
+
+
+
+    </style>
+
+</head>
+<body>
+
+    <div class="container">
+        <div class="mobil">Mobil</div>
+        <div class="tablet">Tablet</div>
+        <div class="laptop">Laptop</div>
+        <div class="desktop">Desktop</div>
+        <div class="large">Large</div>
+    </div>
+
+</body>
+</html>

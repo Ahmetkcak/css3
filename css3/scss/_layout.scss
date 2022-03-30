@@ -1,0 +1,27 @@
+
+body{
+    background-color: $yardimci-renk;
+}
+
+
+@mixin buton-temel{
+    border-radius: 2px;
+    margin: 5px; 
+}
+
+.button-base{
+    @extend .button-base;
+    margin: 5px;
+}
+
+.menu-button{
+    @extend .button-base;
+    color: purple;
+}
+
+.submit-button{
+    @extend .button-base; /*İnclude ile extends arasındaki fark extends tek çatı altında topluyor ve css dosyasına yansıtmıyor. include ise yansıyor*/
+    @extend .menu-button;
+    color: orange;
+    font-size: 1rem;
+}

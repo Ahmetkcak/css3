@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css selectors advance</title>
+    <style>
+        body{
+            font-size: 2rem;
+        }
+
+        /* Element seçici */
+       
+
+        #h2ID{
+            background-color: red;
+        }
+
+        .paragrafSinif{
+            color: green;
+        }
+
+        /* span , p{
+            color: blue;
+        } */
+
+        /*divin içindeki tüm spanlar seçildi  direkt çocuk değil*/
+        div span{
+            color: purple;
+        }
+
+
+        /* divin direkt çocuğu olan spanleri seçer  direkt çocuk */
+        div > span{
+            color: red;
+        }
+
+
+        /*div in kardeşi olan ve divden sonra gelen p ler seçilir  */
+        div ~ p{
+            background-color: blue;
+        }
+
+        /* div elementinden HEMEN SONRA gelen kardeş element olan p'yi seçer*/
+        div + p{
+            background-color: green;
+        }
+
+        h2.h2sinif{
+            background-color: red;
+        }
+
+        h2:not(.h2sinif){
+            background-color: blue;
+        }
+
+        input[type="text"]{
+            background-color: red;
+        }
+
+        input:not(:checked){
+            margin: 20px;
+        }
+
+        /* içinde hm olanları bul */
+        input[data-margin *="hm"]{
+            background-color: pink;
+        }
+
+
+        /*hm ile başlayanları bul */
+        input[data-margin ^="hm"]{
+            background-color: pink;
+        }
+
+        /*hm ile bitenleri bul */
+        input[data-margin $="hm"]{
+            background-color: pink;
+        }
+
+    </style>
+</head>
+<body>
+
+    <input type="checkbox">
+    <input data-margin="ahmett" type="text">
+    <h2 class="h2sinif">Başlık h2</h2>
+    <h2>Başlık h2</h2>
+    <h2>Başlık h2</h2>
+    <p class="paragrafSinif">Paragraf 1</p>
+    <p>Paragraf 2</p>
+    <div>
+        <p>Bu etkilenmeyecek</p>
+        <span>Dışarıdaki span elementi
+            <span>İçerdeki span elementi</span>
+        </span>
+        <p>Bu etkilenecek</p>
+        <span>2. span</span>
+    </div>
+    <p>Paragraf 3</p>
+    <p>Paragraf 4</p>
+    <div>Div2</div>
+    <div>Div3</div>
+    <p>Paragraf 5</p>
+
+
+    <!-- 
+        Seçiciler de öncelik sırası
+        1.İD
+        2.Classes attributes and pseude-classes
+        3.Elements and pseude-elements
+    -->
+</body>
+</html>

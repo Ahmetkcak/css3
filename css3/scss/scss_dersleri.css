@@ -1,0 +1,34 @@
+@charset "UTF-8";
+/*Bu yorum gözükecek*/
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  margin: 10px 5px 0px 10px;
+}
+
+.p1 {
+  font-size: 2rem;
+  color: #ccc;
+  border: 2px solid red;
+}
+
+.main .main-content .p2 {
+  color: blue;
+}
+
+a {
+  font-size: 2rem;
+}
+
+a:hover {
+  color: #e324;
+}
+
+.p2 {
+  color: purple;
+}
+
+.p3 {
+  color: orange;
+  color: rgba(44, 196, 69, 0.877);
+}
+/*# sourceMappingURL=scss_dersleri.css.map */

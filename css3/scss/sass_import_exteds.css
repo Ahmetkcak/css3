@@ -1,0 +1,19 @@
+@charset "UTF-8";
+body {
+  background-color: blue;
+}
+
+.button-base, .menu-button, .submit-button {
+  margin: 5px;
+}
+
+.menu-button, .submit-button {
+  color: purple;
+}
+
+.submit-button {
+  /*İnclude ile extends arasındaki fark extends tek çatı altında topluyor ve css dosyasına yansıtmıyor. include ise yansıyor*/
+  color: orange;
+  font-size: 1rem;
+}
+/*# sourceMappingURL=sass_import_exteds.css.map */

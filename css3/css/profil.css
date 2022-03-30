@@ -1,0 +1,93 @@
+body{
+    margin:0;
+    padding:0;
+    font-family:'Trebuchet MS';
+    line-height: 1.5;
+}
+
+.header{
+    background-color: #F39C12;
+    color:white;
+    padding: 1.5rem;
+}
+
+.header-title{
+    text-align: center;
+    margin:0;
+    padding: 1.2rem;
+}
+
+.section{
+    padding: 1rem 2rem;
+}
+
+.section-content{
+    padding:1rem;
+}
+
+.section-accent{
+    background-color: #F39C12;
+    color:white;
+}
+
+.section-projeler{
+    color:#ccc;
+}
+
+.section-yetenek, .section-projeler{
+    list-style:none;
+    margin:0;
+    font-size:1.1rem;
+}
+
+.section-accent h2{
+    margin: 0;
+}
+
+.section-projeler li{
+    margin-bottom: 1rem;
+}
+.section-projeler li:last-child{
+    margin: 0;
+}
+
+.section-iletisim{
+    margin: 1rem 0;
+}
+
+.input{
+    border: 1px solid #ccc;
+    outline: none;
+    padding:.5em;
+    font-size:1rem;
+    font-family:inherit;
+    line-height:inherit;
+    resize:none;
+    border-radius: .5em;
+}
+
+.input:focus{
+    border-color:1px solid #F39C12;
+    box-shadow: 0 0 5px 2px #F39C12;
+}
+
+.btn{
+    background-color:#F39C12;
+    border:1px solid #7E5109;
+    color: white;
+    padding:.5em 1em;
+    cursor: pointer;
+    outline: none;
+}
+.btn:hover, .btn:focus{
+    background-color:#CA6F1E;
+    box-shadow: 0 0 5px 0 #F0B27A;
+}
+
+.footer{
+    background-color: #F39C12;
+    color:white;
+    padding:1.5rem;
+    text-align:center;
+}
+

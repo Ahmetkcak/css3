@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition Property</title>
+    <style>
+        div{
+            background-color: orange;
+            height: 150px;
+            width: 150px;
+            color: white;
+            font-size: 2rem;
+            /* transition: color 1s  , background-color 3s;
+            transition: all 5s; */
+            /* transition: 5s cubic-bezier(0.99, 0.29, 0, 0.79)  2s; kaç s süreceği - nasıl geçeceği - kaç s sonra başlayacağı */
+            /* transition-delay: 1s; /*Gecikme süresi*/
+            /*transition-timing-function: ease-out; Geçiş şekli*/
+            /*transition-duration: 4s; Gecikme süresi*/
+            /*transition-property: color, background-color; Uygulanacak değişiklikler*/
+            /* transition-property: all; hover ve normal arasında ki tüm her şey için */
+            transition: height 2s , width 2s  1s;
+        }
+
+        div:hover{
+            background-color: teal;
+            color: black;
+            height: 300px;
+            width: 300px;
+        }
+    </style>
+
+</head>
+<body>
+    <div>Div</div>
+</body>
+</html>

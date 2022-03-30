@@ -1,0 +1,48 @@
+$buyuk-font:2rem;
+$ana-renk:#ccc;
+$yardimci-renk:orange;
+$kirmizi-border:2px solid red;
+$body-font: Helvetica , Arial , sans-serif;
+$body-margin: 10px 5px 0px 10px;
+$red-map:(light:#e324,medium:#e355,dark:rgba(44, 196, 69, 0.877));
+
+//Bu yorum gözükmeyecek
+/*Bu yorum gözükecek*/
+
+
+body{
+    font-family: $body-font;
+    margin: $body-margin;
+}
+.p1{
+    font-size: $buyuk-font;
+    color: $ana-renk;
+    border: $kirmizi-border;
+}   
+
+.main{
+    .main-content{ //&-content de diyebiliriz.
+        .p2{
+            color: blue;
+        }
+    }
+}
+
+a{
+    font-size: $buyuk-font;
+    &:hover{   //referans aldığın yere göre zaten orası da a pratik kullanım
+        color:map-get($red-map, light )
+    }
+}
+
+
+
+.p2{
+    $yardimci-renk:purple;
+    color: $yardimci-renk;
+}
+
+.p3{
+    color: $yardimci-renk;
+    color: map-get($red-map , dark);
+}
